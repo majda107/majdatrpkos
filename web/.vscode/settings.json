@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/dist/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/node_modules/",
+        ".vscode/**"
+    ],
+    "liveServer.settings.port": 5501,
+    "sass.lint.enable": true,
+    "sass.disableUnitCompletion": false
+}

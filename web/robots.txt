@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /style
+
+Sitemap: http://majdatrpkos.cz/sitemap.xml

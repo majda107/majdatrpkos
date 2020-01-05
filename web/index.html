@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Marian Trpkos; 2020 All rights reserved.">
+    <meta name="description" content="Marian Trpkos, graphical programmer who is in love with .NET and OpenGL.">
+    <meta name="keywords" content="portfolio, majda107, marian trpkos, programmer, opengl, dotnet">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+    <script src="script.js"></script>
+    <title>Marián Trpkoš</title>
+</head>
+
+<body>
+    <header>
+        <div class="hidden">
+            <div class="parallax">
+                <p class="parallax-gl">GL</p>
+                <div class="parallax-box"></div>
+            </div>
+        </div>
+        <nav>
+            <div class="navbar">
+                <div class="navbar-hamburger" onclick="collapse()">
+                    <span class="navbar-hamburger-line"></span>
+                    <span class="navbar-hamburger-line"></span>
+                    <span class="navbar-hamburger-line"></span>
+                </div>
+                <div class="navbar-content">
+                    <ul class="navbar-content-pages">
+                        <li class="navbar-item">home</li>
+                        <li class="navbar-item">projects</li>
+                        <li class="navbar-item">portfolio</li>
+                    </ul>
+                    <span class="navbar-content-contact">
+                        <span class="navbar-item">contact</span>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="info">
+            <div class="info-text">
+                <h1 class="info-text-name">Marian Trpkos</h1>
+                <span class="info-text-profession">graphics developer</span>
+            </div>
+            <img class="info-image" alt="Profile picture" src="./res/majda.png">
+            <div class="info-author">
+                <div class="info-author-text">
+                    <span class="info-author-text-name">Marián Trpkoš</span>
+                    <span class="info-author-text-nick">majda107</span>
+                </div>
+                <div class="info-author-picture">
+                    <img class="info-author-picture-image" alt="Author picture" src="./res/portrait.png">
+                    <div class="info-author-picture-box parallax"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <section class="content-about">
+                <h2>About me</h2>
+                <p>I am 16 years old developer from Czech republic, who fell in love with C-family languages, OpenGL and
+                    maths. I sometimes do web stuff as well.
+                    <br>
+                    <br>
+                    As it goes for other hobbies, I like 3D printing and love music.
+                </p>
+            </section>
+            <section class="content-community">
+                <div class="content-community-text">
+                    <h2>Join my community</h2>
+                    <div class="content-community-text-box"></div>
+                </div>
+                <object data="res/discord.svg" type="image/svg+xml" class="content-community-image"></object>
+            </section>
+            <section class="content-project">
+                <h2>My latest project</h2>
+                <div class="content-project-card">
+                    <h3>Sharp-tracing</h3>
+                    <p>Toy-raytracer created in C# and OpenTK bindings. Opensource on GitHub.</p>
+                    <div class="content-project-card-picture">
+                        <img class="content-project-card-picture-image" alt="Image of sharp-tracing project"
+                            src="./res/projects/tracing.png">
+                        <div class="content-project-card-picture-box parallax"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C# (.net family)</li>
+                    <li>OpenGL</li>
+                    <li>HTML / CSS (Sass...)</li>
+                    <li>JavaScript | Angular...</li>
+                    <li>Python</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

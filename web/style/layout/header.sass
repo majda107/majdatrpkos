@@ -1,0 +1,210 @@
+@import '../abstracts/variables'
+@import '../components/parallax'
+
+header
+    width: 100%
+    margin: 0 auto 0 auto
+    height: 100vh
+    min-height: 800px
+    justify-content: center
+    align-items: center
+    position: relative
+    overflow: visible
+    max-height: 1300px
+    // overflow-x: hidden
+
+    .hidden
+        overflow: visible
+        position: absolute
+        width: 100%
+        height: 100%
+
+    nav
+        position: absolute
+        z-index: $nav-index
+        width: 90%
+        padding: 5%
+
+    .info
+        // margin-top: 10%
+        width: 90%
+        padding: 10% 5% 0 5%
+        // height: 60%
+        height: 75%
+        display: grid
+        grid-template-areas: '. image author' '. image .' 'text image .'
+        grid-template-columns: 1fr minmax(auto, 560px) 1fr
+        grid-auto-flow: column
+
+        &-text
+            grid-area: text
+            display: flex
+            flex-flow: column
+            align-self: flex-end
+            align-items: center
+            text-align: center
+
+            &-name
+                font-family: 'Odachi'
+                font-size: 6.4rem
+                font-weight: 500
+
+            &-profession
+                font-size: 2.4rem
+                color: $text-black
+                font-weight: 300
+
+        &-author
+            width: auto
+            grid-area: author
+            display: grid
+            grid-template-areas: 'text image' 'text image' '. image'
+            grid-template-columns: auto 200px
+            column-gap: 40px
+
+            &-text
+                display: flex
+                flex-flow: column
+                grid-area: text
+                justify-self: flex-end
+                text-align: center
+
+                &-name
+                    color: $text-dark
+                    font-weight: 700
+                    font-size: 1.8rem
+
+                &-nick
+                    color: $text-dark
+                    font-weight: 300
+                    font-size: 1.6rem
+
+            &-picture
+                width: 100%
+                height: min-content
+                grid-area: image
+                position: relative
+
+                &-image
+                    width: 100%
+                    border-radius: 14px
+                    display: block
+
+                &-box
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background-color: $color-light
+                    border-radius: 14px
+                    left: -20px
+                    top: 20px
+                    z-index: $background-index
+
+        &-image
+            width: 100%
+            grid-area: image
+            justify-self: center
+            align-self: center
+
+@media screen and ( max-width: $hd-width)
+    .gl
+        font-size: 26rem
+
+    header
+        // height: auto
+        .parallax-box
+            display: none
+
+        .info
+            padding-top: 20%
+            height: auto
+            grid-template-columns: 200px 1fr 200px
+            column-gap: 60px
+
+            &-text
+                &-name
+                    font-size: 5rem
+                &-profession
+                    font-size: 2.4rem
+
+            &-author
+                grid-template-areas: 'text' 'image'
+                grid-template-columns: auto
+                column-gap: 0
+                row-gap: 30px
+
+                &-image
+                    max-width: 200px
+                    justify-self: center
+
+                &-text
+                    justify-self: center
+            &-image
+                width: 74%
+
+@media screen and ( max-width: $tablet-width)
+    header
+        height: auto
+        nav
+            padding: 0
+            width: 100%
+
+        .info
+            // margin-top: 140px
+            padding-top: 140px
+            grid-template-areas: 'author' 'image' 'text'
+            grid-template-columns: 100%
+            row-gap: 80px
+
+            &-author
+                grid-template-areas: 'text image'
+
+                &-text
+                    align-self: center
+                    justify-self: flex-start
+                    &-name
+                        font-size: 3.4rem
+                    &-nick
+                        font-size: 2.4rem
+
+                &-picture
+                    width: 200px
+                    justify-self: flex-end
+
+            &-text
+                &-name
+                    font-size: 4.4rem
+                &-profession
+                    font-size: 3rem
+
+            &-image
+                width: 60%
+
+@media screen and ( max-width: $mobile-width)
+    header
+        height: auto
+        .info
+            row-gap: 40px
+            &-author
+                &-text
+                    &-name
+                        font-size: 1.5rem
+                    &-nick
+                        font-size: 1.3rem
+                &-picture
+                    width: 100px
+                    align-self: center
+                    &-image
+                        border-radius: 8px
+                    &-box   
+                        border-radius: 8px
+                        left: -10px
+                        top: 10px
+            &-text
+                &-name
+                    font-size: 3.4rem
+                &-profession
+                    font-size: 2rem
+
+            &-image
+                width: 90%
