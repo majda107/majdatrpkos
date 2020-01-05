@@ -14,7 +14,7 @@ header
     // overflow-x: hidden
 
     .hidden
-        overflow: visible
+        overflow: hidden
         position: absolute
         width: 100%
         height: 100%
@@ -61,6 +61,7 @@ header
             grid-template-areas: 'text image' 'text image' '. image'
             grid-template-columns: auto 200px
             column-gap: 40px
+            align-items: start
 
             &-text
                 display: flex
