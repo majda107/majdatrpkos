@@ -4,14 +4,18 @@
 header
     width: 100%
     margin: 0 auto 0 auto
-    height: 100vh
-    min-height: 800px
+    // height: 100vh
+    // min-height: 800px
     justify-content: center
     align-items: center
     position: relative
-    overflow: visible
-    max-height: 1300px
+    // max-height: 1300px
     // overflow-x: hidden
+
+    .height-wrapper
+        max-height: 1300px
+        height: 100vh
+        min-height: 800px
 
     .hidden
         overflow: hidden
@@ -197,7 +201,7 @@ header
                     align-self: center
                     &-image
                         border-radius: 8px
-                    &-box   
+                    &-box
                         border-radius: 8px
                         left: -10px
                         top: 10px

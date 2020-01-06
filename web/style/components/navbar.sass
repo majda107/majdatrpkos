@@ -28,7 +28,6 @@
 
         &-line:nth-of-type(2)
             transform: translateY(-12px)
-            
 
     &-content
         display: grid
@@ -41,7 +40,7 @@
             grid-area: pages
             display: inline-grid
             grid-auto-flow: column
-            column-gap: 20px
+            column-gap: 40px
             list-style-type: none
 
         &-contact
@@ -52,6 +51,30 @@
         font-size: 1.6rem
         color: $text-dark
         font-weight: 700
+        position: relative
+
+    .active:after
+        left: 0
+        width: 100%
+
+    &-item:after
+        // background: none repeat scroll 0 0 transparent
+        content: ""
+        bottom: 0px
+        display: block
+        height: 3px
+        left: 0
+        position: absolute
+        background: $text-dark
+        transition: width 0.3s ease 0s, left 0.3s ease 0s
+        width: 0px
+
+    &-item:hover
+        cursor: pointer
+
+    &-item:hover:after
+        left: 0
+        width: 100%
 
 @media screen and ( max-width: $tablet-width )
     .navbar
@@ -91,7 +114,7 @@
     .active
         background-color: white
         .navbar-hamburger-line
-                transform: translateY(0px)
+            transform: translateY(0px)
         .navbar-content
             height: 600px
             // border: 100px solid red

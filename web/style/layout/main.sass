@@ -4,6 +4,9 @@ main
     display: flex
     justify-content: center
 
+    .strip
+        width: 80%
+
     .content
         width: 80%
         height: 100px
@@ -27,19 +30,19 @@ main
             grid-auto-flow: row
             row-gap: 40px
             
-            &-text
-                position: relative
-                margin-right: 30px
+            // &-text
+            //     position: relative
+            //     margin-right: 30px
 
-                &-box
-                    background-color: $color-light
-                    position: absolute
-                    width: 80%
-                    height: 140%
-                    top: 0
-                    right: -30px
-                    border-radius: 16px
-                    z-index: $background-index
+            //     &-box
+            //         background-color: $color-light
+            //         position: absolute
+            //         width: 80%
+            //         height: 140%
+            //         top: 0
+            //         right: -30px
+            //         border-radius: 16px
+            //         z-index: $background-index
 
             &-image
                 width: 260px

@@ -1,0 +1,20 @@
+.strip
+    display: grid
+    grid-template-areas: 'header . card'
+    grid-auto-columns: auto minmax(100px, 1fr) minmax(auto, 500px)
+    align-items: center
+
+    &-header
+        grid-area: header
+
+    &-card
+        align-items: center
+        grid-area: card
+        display: grid
+        grid-template-areas: 'text image'
+        column-gap: 40px
+        p
+            grid-area: text
+        img
+            grid-area: image
+            width: 100px
