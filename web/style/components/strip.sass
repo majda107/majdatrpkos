@@ -1,3 +1,5 @@
+@import '../abstracts/variables'
+    
 .strip
     display: grid
     grid-template-areas: 'header . card'
@@ -18,3 +20,17 @@
         img
             grid-area: image
             width: 100px
+
+@media screen and ( max-width: $tablet-width )
+    .strip
+        grid-template-areas: 'header' 'card'
+        grid-auto-columns: 100%
+        row-gap: 100px
+
+        &-header
+            max-width: 80%
+            justify-self: flex-start
+
+        &-card
+            max-width: 80%
+            justify-self: flex-end

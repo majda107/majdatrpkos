@@ -1,0 +1,29 @@
+@import '../abstracts/variables'
+
+.button
+    position: relative
+    margin-right: 40px
+    font-size: 1.6rem
+    font-weight: 700
+
+    &-box
+        background-color: $color-light
+        position: absolute
+        width: 120%
+        height: 140%
+        top: 0
+        right: -40px
+        border-radius: 16px
+        z-index: $background-index
+
+        &-arrow
+            position: absolute
+            display: block
+            width: 100px
+            height: 80%
+            bottom: -10px
+            right: -40px
+
+            &-image
+                width: 100%
+                height: 100%
