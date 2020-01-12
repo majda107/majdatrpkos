@@ -1,0 +1,26 @@
+@import '../abstracts/variables'
+    
+.row
+    display: grid
+    grid-template-columns: 1fr auto
+    grid-auto-flow: column
+    column-gap: 100px
+    // align-content: center
+
+    &.right
+        grid-template-columns: 1fr auto
+    &.left
+        grid-template-columns: auto 1fr
+
+@media screen and ( max-width: $tablet-width)
+    .row
+        grid-template-columns: 100%
+        grid-auto-flow: row
+        justify-content: center
+        align-items: center
+        justify-items: center
+        row-gap: 60px
+
+        &.right, &.left
+            grid-template-columns: 100%   
+    

@@ -5,7 +5,7 @@ var offsetY = 0
 
 function reset() {
     offsetX = 0
-    offsetY =0
+    offsetY = 0
 }
 
 

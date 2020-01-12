@@ -5,18 +5,6 @@
     grid-auto-flow: row
     row-gap: 100px
 
-    &-row
-        display: grid
-        grid-template-columns: 1fr auto
-        grid-auto-flow: column
-        column-gap: 100px
-
-        &.right
-            grid-template-columns: 1fr auto
-
-        &.left
-            grid-template-columns: auto 1fr
-
     &-project
         display: grid
         grid-template-areas: 'name picture' 'description picture' 'button picture'
@@ -100,4 +88,3 @@
             row-gap: 60px
             justify-content: center
             justify-items: center
-    

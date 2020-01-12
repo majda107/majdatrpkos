@@ -62,9 +62,15 @@
         </div>
     </header>
     <main>
-        <div class="content">
-            <section class="content-about">
-                <h2>About me</h2>
+        <div class="introduction">
+            <section class="introduction-about">
+                <!-- <h2>Introduction</h2> -->
+                <div class="introduction-header">
+                    <h2 class="highlight">
+                        Introduction
+                        <div class="highlight-box"></div>
+                    </h2>
+                </div>
                 <p>I am 16 years old developer from Czech republic, who fell in love with C-family languages, OpenGL and
                     maths. I sometimes do web stuff as well.
                     <br>
@@ -72,38 +78,139 @@
                     As it goes for other hobbies, I like 3D printing and love music.
                 </p>
             </section>
-            <section class="content-community">
-                <!-- <div class="content-community-text">
-                    <h2>Join my community</h2>
-                    <div class="content-community-text-box"></div>
-                </div> -->
+            <section class="introduction-community">
                 <h2 class="highlight">
                     Join my community
                     <div class="highlight-box"></div>
                 </h2>
-                <object data="res/discord.svg" type="image/svg+xml" class="content-community-image"></object>
+                <object data="res/discord.svg" type="image/svg+xml" class="introduction-community-image"></object>
             </section>
-            <section class="content-project">
+            <section class="introduction-project">
                 <h2>My latest project</h2>
-                <div class="content-project-card">
+                <div class="introduction-project-card">
                     <h3>Sharp-tracing</h3>
                     <p>Toy-raytracer created in C# and OpenTK bindings. Opensource on GitHub.</p>
-                    <div class="content-project-card-picture">
-                        <img class="content-project-card-picture-image" alt="Image of sharp-tracing project"
+                    <div class="introduction-project-card-picture">
+                        <img class="introduction-project-card-picture-image" alt="Image of sharp-tracing project"
                             src="./res/projects/tracing.png">
-                        <div class="content-project-card-picture-box parallax"></div>
+                        <div class="introduction-project-card-picture-box parallax"></div>
                     </div>
                 </div>
             </section>
-            <section class="content-skills">
+            <section class="introduction-skills">
                 <h2>Skills</h2>
                 <ul>
                     <li>C# (.net family)</li>
+                    <li>C++</li>
                     <li>OpenGL</li>
                     <li>HTML / CSS (Sass...)</li>
                     <li>JavaScript | Angular...</li>
                     <li>Python</li>
                 </ul>
+            </section>
+        </div>
+        <div class="setup">
+            <section class="setup-header">
+                <h2 class="highlight">
+                    My development setup
+                    <div class="highlight-box"></div>
+                </h2>
+            </section>
+            <section class="setup-hardware row right">
+                <div class="setup-hardware-text setup-text">
+                    <h3 class="">Hardware</h3>
+                    <p>
+                        I don't use any desktop computer, but ultrabook with eGPU. This setup makes me able to be as
+                        portable as
+                        possible, but also have VR-ready perfomance (when I am docked in).
+                        <br>
+                        Since I am fan of thin bezells, nice screens and overall lightness i chose Lenovo Yoga 15-IKB as
+                        my
+                        daily driver, combined with 1080 AUROUS eGPU box I can achieve really good perfomance (only that
+                        laptop
+                        i5 CPU may lack sometimes, that's one tradeoff...).
+                    </p>
+                </div>
+                <div class="highlight-picture">
+                    <img class="setup-hardware-image setup-image" alt="Lenovo Yoga 15-IKB" src="res/setup_light.jpg">
+                    <div class="highlight-picture-box parallax"></div>
+                </div>
+            </section>
+            <section class="setup-devices row left">
+                <div class="setup-devices-text setup-text">
+                    <h3>External devices</h3>
+                    <p>
+                        I am also big fan of mechanical keyboards, so I have two MKs at my workdesk - one with noisy
+                        clicky
+                        blue
+                        switches and silent one with blacks. I preffer huge monitors over multi-monitor setup, so I have
+                        32"
+                        PHILIPS curved monitor. I also use MX Master 2s logitech mouse.
+                    </p>
+                </div>
+                <div class="highlight-picture left">
+                    <img class="setup-devices-image setup-image" alt="Mechanical keyboard" src="res/keyboard.jpg">
+                    <div class="highlight-picture-box"></div>
+                </div>
+            </section>
+            <section class="setup-os row right">
+                <div class="setup-os-text setup-text">
+                    <h3>Operating system</h3>
+                    <p>
+                        What about the OS? Well, I grew up on Windows, switched to MacOS like 3 years ago (when I bought
+                        my
+                        first laptop, it was second-handed MacBook Pro 15") and then switched back to Windows 10.
+                        However I
+                        always was more into UNIX / LINUX instead of Windows, i used it only because of VS IDE and other
+                        apps,
+                        right now I managed to get my workflow running of Arch linux (Manjaro) so I guess I'll be linux
+                        guy for a while.
+                    </p>
+                </div>
+            </section>
+            <section class="setup-linux row right">
+                <div class="setup-linux-text setup-text">
+                    <h3>Did you say linux?</h3>
+                    <p>
+                        Yup, right now I am locked on Manjaro (arch-based) with KDE Plasma desktop
+                        enviroment. I use KDE because it made tons of improvements since last time I tried to use it
+                        (eg. 1
+                        year
+                        ago) and there are really cool plugins like KDE connect. Also I love it's overall look combined
+                        with
+                        Layan theme.
+                    </p>
+                </div>
+                <div class="highlight-picture">
+                    <img class="setup-linux-image setup-image" alt="My linux configuration" src="res/linux.png">
+                    <div class="highlight-picture-box"></div>
+                </div>
+            </section>
+            <section class="setup-ide row left">
+                <div class="setup-ide-text setup-text">
+                    <h3>Did you say linux?</h3>
+                    <p>
+                        Programming on linux? This was the thing I was worried about and had to master some skills to
+                        achieve
+                        smooth workflow. I am VS IDE guy, who loves C# and doesn't really care about build process and
+                        stuff.
+                        Here on linux I found C++ to be good thing, I do mainly OpenGL / Web apps / Desktop apps, so I
+                        fell
+                        in
+                        love with Qt. When it comes to IDE, I can't complain about VS Code, it's definitelly one of the
+                        best
+                        IDE's out there (although it's based on electron which I totally hate because of node.js), but
+                        it's
+                        extensivity is just awesome. Otherwise I found VIM to be a good friend and JB Rider can be
+                        usefull
+                        for
+                        things like C# Blazor.
+                    </p>
+                </div>
+                <div class="highlight-picture left">
+                    <img class="setup-ide-image setup-image" alt="Image of my ide" src="res/ide.png">
+                    <div class="highlight-picture-box"></div>
+                </div>
             </section>
         </div>
     </main>
