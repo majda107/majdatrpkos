@@ -12,6 +12,8 @@ function reset() {
 var navbar = null
 
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector(".loader").classList.add('fade');
+
     var parallax = Array.from(document.querySelectorAll('.parallax'))
     navbar = document.querySelector('.navbar')
 

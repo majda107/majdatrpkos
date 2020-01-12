@@ -1,0 +1,26 @@
+@import '../abstracts/variables'
+    
+.loader
+    position: fixed
+    z-index: $loader-index
+    background-color: $color-black
+    height: 100vh
+    width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+    svg path,
+    svg rect
+        fill: white
+
+.fade
+    animation: fade 0.75s
+    animation-fill-mode: forwards
+
+@keyframes fade
+    0%
+        transform: translateY(0)    
+    100%
+        transform: translateY(-100%)
+        

@@ -1,5 +1,5 @@
 @import '../abstracts/variables'
-    
+
 .highlight
     position: relative
     margin-right: 30px
@@ -14,18 +14,20 @@
         right: -30px
         border-radius: 16px
         z-index: $background-index
+        box-shadow: 0 0 5rem $color-light
 
-    &-picture
-        position: relative
-        align-self: center
+.highlight-picture
+    position: relative
+    align-self: center
 
-        &-box
-            position: absolute
-            width: 100%
-            height: 100%
-            background-color: red
-            left: -20px
-            top: 20px
-            border-radius: 20px
-            z-index: $background-index
-            background-color: $color-light
+    &-box
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: red
+        left: -20px
+        top: 20px
+        border-radius: 20px
+        z-index: $background-index
+        background-color: $color-light
+        box-shadow: 0 0 5rem $color-light

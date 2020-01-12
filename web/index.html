@@ -16,6 +16,17 @@
 </head>
 
 <body>
+    <div class="loader">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="80px" height="80px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+            xml:space="preserve">
+            <path fill="#000"
+                d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+                    to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
     <header>
         <div class="hidden">
             <div class="parallax">
@@ -34,6 +45,7 @@
                     <ul class="navbar-content-pages">
                         <li class="navbar-item active"><a href="index.html">home</a></li>
                         <li class="navbar-item"><a href="projects/projects.html">projects</a></li>
+                        <li class="navbar-item"><a>resources</a></li>
                     </ul>
                     <span class="navbar-content-contact">
                         <span class="navbar-item">contact</span>
@@ -52,6 +64,12 @@
                     <div class="info-author-text">
                         <span class="info-author-text-name">Marián Trpkoš</span>
                         <span class="info-author-text-nick">majda107</span>
+                    </div>
+                    <a class="info-author-email">majda.trpkos@gmail.com</a>
+                    <div class="info-author-contact">
+                        <a><img alt="Facebook icon" src="./res/icons/telegram.svg"></a>
+                        <a><img alt="Facebook icon" src="./res/icons/facebook.svg"></a>
+                        <a><img alt="Facebook icon" src="./res/icons/github.svg"></a>
                     </div>
                     <div class="info-author-picture">
                         <img class="info-author-picture-image" alt="Author picture" src="./res/portrait.png">
@@ -83,7 +101,9 @@
                     Join my community
                     <div class="highlight-box"></div>
                 </h2>
-                <object data="res/discord.svg" type="image/svg+xml" class="introduction-community-image"></object>
+                <a class="introduction-community-image" href="https://discord.gg/XJe3Tm">
+                    <object data="res/discord.svg" type="image/svg+xml"></object>
+                </a>
             </section>
             <section class="introduction-project">
                 <h2>My latest project</h2>
@@ -214,6 +234,9 @@
             </section>
         </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

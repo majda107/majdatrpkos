@@ -1,5 +1,5 @@
 @import '../abstracts/variables'
-    
+
 .introduction
     width: 80%
     // height: 100px
@@ -27,6 +27,10 @@
         &-image
             width: 260px
             justify-self: flex-end
+            display: block
+
+            object
+                pointer-events: none
 
     &-project
         grid-area: project
@@ -51,7 +55,7 @@
             &-picture
                 grid-area: picture
                 position: relative
-                
+
                 &-image
                     width: 200px
                     border-radius: 16px
@@ -65,11 +69,13 @@
                     height: 100%
                     background-color: $color-light
                     z-index: $background-index
+                    box-shadow: 0 0 5rem $color-light
 
     &-skills
         grid-area: skills
         justify-self: flex-end
         background-color: $color-light
+        box-shadow: 0 0 5rem $color-light
         padding: 30px
         border-radius: 16px
         h2
