@@ -1,0 +1,29 @@
+@media print
+    .parallax, footer, .loader, nav
+        display: none
+
+    .height-wrapper
+        height: auto !important
+        min-height: 0 !important
+
+    .info
+        grid-template-areas: 'text author' !important
+        grid-template-columns: repeat(2, 1fr) !important
+
+        &-image
+            display: none
+
+        &-text
+            justify-self: center !important
+            align-self: center !important
+
+        &-author
+            justify-self: center !important
+            align-self: center !important
+
+            &-contact
+                a
+                    display: none !important
+
+                img
+                    display: none !important
