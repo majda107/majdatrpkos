@@ -9,8 +9,9 @@
         display: grid
         grid-template-areas: 'name picture' 'description picture' 'button picture'
         justify-items: flex-start
-        column-gap: 40px
+        column-gap: 60px
         align-items: center
+        row-gap: 60px
 
         h2
             grid-area: name
@@ -22,7 +23,7 @@
 
             img
                 grid-area: image
-                width: 340px
+                width: 380px
                 border-radius: 16px
                 display: block
 
@@ -51,6 +52,7 @@
         div
             background-color: $color-light
             border-radius: 16px
+            box-shadow: 0 0 5rem $color-light
 
         div:nth-of-type(1)
             height: 50%
