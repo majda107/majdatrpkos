@@ -34,3 +34,14 @@ function collapse() {
     navbar.classList.toggle('active')
 }
 
+window.addEventListener('load', () => {
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('worker.js').then(function(response) {
+            console.log('Registration Successful', response)
+        }, function (error) {
+            console.log('Registration Failed', error)
+        })
+    }
+})
+
+
