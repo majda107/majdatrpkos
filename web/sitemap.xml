@@ -7,13 +7,20 @@
 
 <url>
   <loc>http://majdatrpkos.cz/</loc>
-  <lastmod>2020-01-04T02:23:44+00:00</lastmod>
+  <lastmod>2020-01-14T16:35:41+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-
+<url>
+  <loc>http://majdatrpkos.cz/index.html</loc>
+  <lastmod>2020-01-14T16:35:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 <url>
   <loc>http://majdatrpkos.cz/projects/projects.html</loc>
-  <lastmod>2020-01-04T02:23:44+00:00</lastmod>
+  <lastmod>2020-01-14T16:35:49+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+</urlset>
 
 
 </urlset>
