@@ -33,7 +33,7 @@
                 <p class="parallax-cs">C#</p>
             </div>
         </div>
-        <nav>
+        <nav id="nav">
             <div class="navbar">
                 <div class="navbar-hamburger" onclick="collapse()">
                     <span class="navbar-hamburger-line"></span>
@@ -47,7 +47,7 @@
                         <li class="navbar-item"><a>resources</a></li>
                     </ul>
                     <span class="navbar-content-contact">
-                        <span class="navbar-item">contact</span>
+                        <a class="navbar-item" href="#footer">contact</a>
                     </span>
                 </div>
             </div>
@@ -57,11 +57,11 @@
         <div class="strip">
             <h1 class="strip-header highlight">
                 Explore variety of my projects
-                <div class="highlight-box"></div>
+                <span class="highlight-box"></span>
             </h1>
             <div class="strip-card">
                 <p class="strip-card-text">You can find most of my projects on GitHub!</p>
-                <a href="https://github.com/majda107?tab=repositories">  
+                <a href="https://github.com/majda107?tab=repositories">
                     <img class="strip-card-image" alt="GitHub logo." src="../res/icons/github.png">
                 </a>
             </div>
@@ -171,7 +171,22 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer" id="footer">
+        <div class="footer-contact">
+            <span class="footer-contact-name">Marian Trpkos </span>
+            <span class="footer-contact-email">majda.trpkos@gmail.com</span>
+            <span class="footer-contact-icons">
+                <a href="https://t.me/majda107"><img alt="telegram icon" src="../res/icons/telegram.svg"></a>
+                <a href="https://www.facebook.com/marian107"><img alt="Facebook icon"
+                        src="../res/icons/facebook.svg"></a>
+                <a href="https://github.com/majda107"><img alt="GitHub icon" src="../res/icons/github.svg"></a>
+            </span>
+        </div>
+        <div class="footer-copyright">
+            <span>Marian Trpkos</span>
+            <span>2020</span>
+            <span>All rights reserved.</span>
+        </div>
+        <a class="footer-top" href="#nav">top</a>
     </footer>
 </body>

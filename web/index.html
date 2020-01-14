@@ -33,7 +33,7 @@
                 <div class="parallax-box"></div>
             </div>
         </div>
-        <nav>
+        <nav id="nav">
             <div class="navbar">
                 <div class="navbar-hamburger" onclick="collapse()">
                     <span class="navbar-hamburger-line"></span>
@@ -47,7 +47,7 @@
                         <li class="navbar-item"><a>resources</a></li>
                     </ul>
                     <span class="navbar-content-contact">
-                        <span class="navbar-item">contact</span>
+                        <a class="navbar-item" href="#footer">contact</a>
                     </span>
                 </div>
             </div>
@@ -67,7 +67,8 @@
                     <a class="info-author-email">majda.trpkos@gmail.com</a>
                     <div class="info-author-contact">
                         <a href="https://t.me/majda107"><img alt="telegram icon" src="./res/icons/telegram.svg"></a>
-                        <a href="https://www.facebook.com/marian107"><img alt="Facebook icon" src="./res/icons/facebook.svg"></a>
+                        <a href="https://www.facebook.com/marian107"><img alt="Facebook icon"
+                                src="./res/icons/facebook.svg"></a>
                         <a href="https://github.com/majda107"><img alt="GitHub icon" src="./res/icons/github.svg"></a>
                     </div>
                     <div class="info-author-picture">
@@ -85,7 +86,7 @@
                 <div class="introduction-header">
                     <h2 class="highlight">
                         Introduction
-                        <div class="highlight-box"></div>
+                        <span class="highlight-box"></span>
                     </h2>
                 </div>
                 <p>I am 16 years old developer from Czech republic, who fell in love with C-family languages, OpenGL and
@@ -98,7 +99,7 @@
             <section class="introduction-community">
                 <h2 class="highlight">
                     Join my community
-                    <div class="highlight-box"></div>
+                    <span class="highlight-box"></span>
                 </h2>
                 <a class="introduction-community-image" href="https://discord.gg/XJe3Tm">
                     <object data="res/icons/discord.svg" type="image/svg+xml"></object>
@@ -132,7 +133,7 @@
             <section class="setup-header">
                 <h2 class="highlight">
                     My development setup
-                    <div class="highlight-box"></div>
+                    <span class="highlight-box"></span>
                 </h2>
             </section>
             <section class="setup-hardware row right">
@@ -151,7 +152,8 @@
                     </p>
                 </div>
                 <div class="highlight-picture">
-                    <img class="setup-hardware-image setup-image" alt="Lenovo Yoga 15-IKB" src="res/setup/setup_light.jpg">
+                    <img class="setup-hardware-image setup-image" alt="Lenovo Yoga 15-IKB"
+                        src="res/setup/setup_light.jpg">
                     <div class="highlight-picture-box parallax"></div>
                 </div>
             </section>
@@ -233,8 +235,23 @@
             </section>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer" id="footer">
+        <div class="footer-contact">
+            <span class="footer-contact-name">Marian Trpkos </span>
+            <span class="footer-contact-email">majda.trpkos@gmail.com</span>
+            <span class="footer-contact-icons">
+                <a href="https://t.me/majda107"><img alt="telegram icon" src="./res/icons/telegram.svg"></a>
+                <a href="https://www.facebook.com/marian107"><img alt="Facebook icon"
+                        src="./res/icons/facebook.svg"></a>
+                <a href="https://github.com/majda107"><img alt="GitHub icon" src="./res/icons/github.svg"></a>
+            </span>
+        </div>
+        <div class="footer-copyright">
+            <span>Marian Trpkos</span>
+            <span>2020</span>
+            <span>All rights reserved.</span>
+        </div>
+        <a class="footer-top" href="#nav">top</a>
     </footer>
 </body>
 

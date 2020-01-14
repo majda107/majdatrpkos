@@ -1,10 +1,87 @@
 @import '../abstracts/variables'
 
-footer
-    height: 140px
+.footer
+    // height: 120px
+    // margin-top: 200px
+    padding: 40px 0 40px
     width: 90%
     margin: 0 auto 0 auto
     background-color: $color-light
     border-top-right-radius: 25px
     border-top-left-radius: 25px
     box-shadow: 0 0 5rem $color-light
+    display: grid
+    grid-template-areas: '. contact . copyright top.'
+    column-gap: 20px
+    grid-template-columns: 100px auto minmax(100px, 1fr) auto auto 100px
+    justify-content: center
+    align-content: center
+    align-items: center
+    
+    &-top
+        grid-area: top
+        font-size: 1.4rem
+        text-decoration: underline
+        color: $text-light
+        font-weight: 700
+        text-align: center
+
+    &-contact
+        // display: grid
+        grid-area: contact
+        align-items: center
+        // grid-auto-flow: column
+        display: flex
+        flex-flow: row
+        flex-wrap: wrap
+        justify-content: center
+        align-content: center
+        // grid-template-columns: repeat(auto-fit, 200px)
+        color: $text-dark
+        column-gap: 30px
+
+        span
+            padding: 8px 0 8px
+
+        &-name
+            color: $text-black
+            font-weight: 600
+
+        &-icons
+            display: grid
+            grid-auto-flow: column
+            column-gap: 20px
+
+            a
+                // padding: 20px 0 20px
+
+                img
+                    width: 40px
+                    border-radius: 0
+
+    &-copyright
+        grid-area: copyright
+        align-self: center
+        color: $text-light
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: row
+        flex-wrap: wrap
+        text-align: center
+
+        span
+            padding: 4px 14px 4px 14px
+
+    &-copyright, &-contact
+        font-size: 1.4rem
+
+@media screen and ( max-width: $tablet-width )
+    .footer
+        grid-template-areas: '. contact .' '. copyright .' '. top .'
+        grid-template-columns: 20px 1fr 20px
+        row-gap: 60px
+
+        &-contact
+            span
+                padding: 12px 0 12px            
