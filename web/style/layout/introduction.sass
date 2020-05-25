@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 
 .introduction
     width: 80%
@@ -28,6 +29,7 @@
             width: 260px
             justify-self: flex-end
             display: block
+            filter: invert($inversion-filter)
 
             object
                 pointer-events: none
@@ -69,13 +71,16 @@
                     height: 100%
                     background-color: $color-light
                     z-index: $background-index
-                    box-shadow: 0 0 5rem $color-light
+                    // box-shadow: 0 0 5rem $color-light
+                    @include elevate()
+                    
 
     &-skills
         grid-area: skills
         justify-self: flex-end
         background-color: $color-light
-        box-shadow: 0 0 5rem $color-light
+        // box-shadow: 0 0 5rem $color-light
+        @include elevate()
         padding: 30px
         border-radius: 16px
         h2

@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 
 .projects
     display: grid
@@ -52,7 +53,8 @@
         div
             background-color: $color-light
             border-radius: 16px
-            box-shadow: 0 0 5rem $color-light
+            @include elevate()
+            // box-shadow: 0 0 5rem $color-light
 
         div:nth-of-type(1)
             height: 50%

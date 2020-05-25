@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
 
 .footer
     // height: 120px
@@ -9,7 +10,9 @@
     background-color: $color-light
     border-top-right-radius: 25px
     border-top-left-radius: 25px
-    box-shadow: 0 0 5rem $color-light
+    // box-shadow: 0 0 5rem $color-light
+    // box-shadow: 0 0 3rem $color-light
+    @include elevate()
     display: grid
     grid-template-areas: '. contact . copyright top.'
     column-gap: 20px

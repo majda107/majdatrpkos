@@ -1,4 +1,5 @@
 @import '../abstracts/variables'
+@import '../abstracts/mixins'
     
 .parallax
     position: absolute
@@ -15,7 +16,8 @@
         left: -140px
         top: -100px
         z-index: $background-index
-        text-shadow: 0 0 5rem $color-light
+        // text-shadow: 0 0 5rem $color-light
+        @include elevate-text()
 
     &-cs
         position: absolute
@@ -25,7 +27,8 @@
         right: 80px
         top: -160px
         z-index: $background-index
-        text-shadow: 0 0 5rem $color-light
+        // text-shadow: 0 0 5rem $color-light
+        @include elevate-text()
 
     &-box
         position: absolute
@@ -36,7 +39,8 @@
         top: 500px
         background-color: $color-light
         z-index: $background-index
-        box-shadow: 0 0 5rem $color-light
+        // box-shadow: 0 0 5rem $color-light
+        @include elevate()
 
 @media screen and ( max-width: $mobile-width )
     .parallax
