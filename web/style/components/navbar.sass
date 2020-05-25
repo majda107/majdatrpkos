@@ -45,6 +45,9 @@
 
         &-contact
             grid-area: contact
+            display: inline-grid
+            grid-auto-flow: column
+            column-gap: 40px
 
     &-item
         display: inline-block
@@ -52,6 +55,7 @@
         color: var(--text-dark)
         font-weight: 700
         position: relative
+        transition: background-color 400ms ease-in-out
 
     .active:after
         left: 0
@@ -112,7 +116,7 @@
             padding: 10px 0 10px
 
     .active
-        background-color: white
+        background-color: var(--background-color)
         .navbar-hamburger-line
             transform: translateY(0px)
         .navbar-content

@@ -43,7 +43,7 @@ function available() {
 
 let lightTheme = {
     '--elevate-color': '#ededed',
-    '--background-color': '#fffff',
+    '--background-color': '#ffffff',
 
     '--text-dark': '#5F5F5F',
     '--text-black': '#3C3C3C',
@@ -61,9 +61,10 @@ let darkTheme = {
     '--elevate-color': '#020202',
     '--background-color': '#0B0B0B',
 
-    '--text-dark': '#F9F9F3',
+    //#F9F9F3
+    '--text-dark': '#E0E0DB',
     '--text-black': '#F9F9F3',
-    '--text-light': '#F9F9F3',
+    '--text-light': '#C7C7C2',
 
     '--color-light': '#1f1d1d',
     '--color-black': '#161616',
