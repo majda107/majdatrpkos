@@ -93,11 +93,18 @@ function cycleThemes() {
     if(activeIndex >= activeThemes.length)
         activeIndex = 0
 
+    localStorage.setItem('theme-index', activeIndex)
     setTheme(activeThemes[activeIndex])
 }
 
 // set base theme
-setTheme(activeThemes[activeIndex])
+function setBaseTheme() {
+    let index = localStorage.getItem('theme-index')
+    index = index == undefined ? 0 : parseInt(index)
+    setTheme(activeThemes[index])
+}
+
+setBaseTheme()
 
 
 
