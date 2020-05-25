@@ -73,6 +73,8 @@ let darkTheme = {
     '--picture-url': 'url(../../res/majda-dark.png)'
 }
 
+
+
 function setTheme(theme) {
     for(let key in theme) {
         document.documentElement.style.setProperty(key, theme[key])
@@ -80,6 +82,21 @@ function setTheme(theme) {
 }
 
 
+
+
+let activeIndex = 0
+let activeThemes = [ lightTheme, darkTheme ]
+
+function cycleThemes() {
+    activeIndex += 1
+    if(activeIndex >= activeThemes.length)
+        activeIndex = 0
+
+    setTheme(activeThemes[activeIndex])
+}
+
+// set base theme
+setTheme(activeThemes[activeIndex])
 
 
 
