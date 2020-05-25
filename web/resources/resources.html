@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="../fonts/odachi/odachi.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Marian Trpkos; 2020 All rights reserved.">
+    <meta name="description"
+        content="Page of portfolio that contains all my projects I want to share across entire world.">
+    <meta name="keywords" content="portfolio, majda107, projects, programmer, opengl, dotnet">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en_US">
+    <meta name="theme-color" content="#EEEEEE">
+    <meta name="google" content="notranslate">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.min.css">
+    <script src="../worker.js"></script>
+    <script src="../script.js"></script>
+    <script src="loader.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Marián Trpkoš</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156174690-1"></script>
+</head>
+
+<body>
+    <div class="loader">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 50 50" xml:space="preserve">
+            <path
+                d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+                    to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+            </path>
+        </svg>
+    </div>
+    <header class="page-projects">
+        <div class="hidden">
+            <div class="parallax">
+                <p class="parallax-cs">C++</p>
+            </div>
+        </div>
+        <nav id="nav">
+            <div class="navbar">
+                <div class="navbar-hamburger" onclick="collapse()">
+                    <span class="navbar-hamburger-line"></span>
+                    <span class="navbar-hamburger-line"></span>
+                    <span class="navbar-hamburger-line"></span>
+                </div>
+                <div class="navbar-content">
+                    <ul class="navbar-content-pages">
+                        <li class="navbar-item"><a href="../index.html">home</a></li>
+                        <li class="navbar-item"><a href="../projects/projects.html">projects</a></li>
+                        <li class="navbar-item active">
+                            <a">resources</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-content-contact">
+                        <a class="navbar-item" onclick="cycleThemes()">theme</a>
+                        <a class="navbar-item" href="#footer">contact</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="strip">
+            <h1 class="strip-header highlight">
+                My personal library, basically
+                <span class="highlight-box"></span>
+            </h1>
+            <div class="strip-card">
+                <p class="strip-card-text">Some cool stuff here!</p>
+            </div>
+        </div>
+        <p class="wiki-text">
+            Here I'll try to upload and collect all of my configuration files, wallpapers, music, settings and all other
+            stuff related to this.
+
+            Take this as a small wiki, basically.
+        </p>
+        <section class="wiki">
+            <div class="section">
+                <h2 class="section-header">Configurations</h2>
+                <div class="section-content">
+                    <div class="entry">
+                        <h3 class="entry-header">Dotfiles</h3>
+                        <p>Link to my dotfiles repo: <a
+                                href="https://github.com/majda107/dotfiles">https://github.com/majda107/dotfiles</a></p>
+                    </div>
+                    <div class="entry">
+                        <h3 class="entry-header">VSCode settings</h3>
+                        <ul>
+                            <li>Theme preference: 1984 Unbolded</li>
+                            <li>Font-size: 14, Consolas / FiraCode (with font ligatures)</li>
+                            <li>Relative line numbers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-block"></div>
+            </div>
+            <div class="section">
+                <h2 class="section-header">Wallpapers</h2>
+                <div class="section-content">
+                    <div class="entry">
+                        <h3 class="entry-header">Public folder</h3>
+                        <p>Link to my public folder wallpapers:</p>
+                    </div>
+                </div>
+                <div class="section-block"></div>
+            </div>
+            <div class="section">
+                <h2 class="section-header">Music</h2>
+                <div class="section-content">
+                    <div class="entry">
+                        <h3 class="entry-header">Coding playlist (1k songs)</h3>
+                        <p>Link to legendary coding playlist:</p>
+                    </div>
+                    <div class="entry">
+                        <h3 class="entry-header">Rock / Metal</h3>
+                        <p>Link to legendary coding playlist:</p>
+                    </div>
+                    <div class="entry">
+                        <h3 class="entry-header">LiquidDNB</h3>
+                        <p>Link to legendary coding playlist:</p>
+                    </div>
+                </div>
+                <div class="section-block"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-contact">
+            <span class="footer-contact-name">Marian Trpkos </span>
+            <span class="footer-contact-email">majda.trpkos@gmail.com</span>
+            <span class="footer-contact-icons">
+                <a href="https://t.me/majda107"><img alt="telegram icon" src="../res/icons/telegram.svg"></a>
+                <a href="https://www.facebook.com/marian107"><img alt="Facebook icon"
+                        src="../res/icons/facebook.svg"></a>
+                <a href="https://github.com/majda107"><img alt="GitHub icon" src="../res/icons/github.svg"></a>
+            </span>
+        </div>
+        <div class="footer-copyright">
+            <span>Marian Trpkos</span>
+            <span>2020</span>
+            <span>All rights reserved.</span>
+        </div>
+        <a class="footer-top" href="#nav">top</a>
+    </footer>
+</body>
