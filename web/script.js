@@ -39,6 +39,52 @@ function available() {
 }
 
 
+
+
+let lightTheme = {
+    '--elevate-color': '#ededed',
+    '--background-color': '#fffff',
+
+    '--text-dark': '#5F5F5F',
+    '--text-black': '#3C3C3C',
+    '--text-light': '#666666',
+
+    '--color-light': '#EEEEEE',
+    '--color-black': '#161616',
+    '--color-dark': '#707070',
+
+    '--inversion-filter': 'invert(0)',
+    '--picture-url': 'url(../../res/majda.png)'
+}
+
+let darkTheme = {
+    '--elevate-color': '#020202',
+    '--background-color': '#0B0B0B',
+
+    '--text-dark': '#F9F9F3',
+    '--text-black': '#F9F9F3',
+    '--text-light': '#F9F9F3',
+
+    '--color-light': '#1f1d1d',
+    '--color-black': '#161616',
+    '--color-dark': '#707070',
+
+    '--inversion-filter': 'invert(0.8)',
+    '--picture-url': 'url(../../res/majda-dark.png)'
+}
+
+function setTheme(theme) {
+    for(let key in theme) {
+        document.documentElement.style.setProperty(key, theme[key])
+    }
+}
+
+
+
+
+
+
+
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());

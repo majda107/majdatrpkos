@@ -8,7 +8,7 @@
 
     &-header
         grid-area: header
-        color: $text-black
+        color: var(--text-black)
 
     &-card
         align-items: center
@@ -21,7 +21,7 @@
         img
             grid-area: image
             width: 100px
-            filter: invert($inversion-filter)
+            filter: var(--inversion-filter)
 
 @media screen and ( max-width: $tablet-width )
     .strip

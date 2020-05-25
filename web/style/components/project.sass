@@ -31,12 +31,13 @@
             &-box
                 width: 100%
                 height: 100%
-                background-color: $color-light
+                background-color: var(--color-light)
                 z-index: $background-index
                 position: absolute
                 left: -20px
                 top: 20px
                 border-radius: 16px
+                @include elevate()
 
         p
             grid-area: description
@@ -51,7 +52,7 @@
         column-gap: 40px
 
         div
-            background-color: $color-light
+            background-color: var(--color-light)
             border-radius: 16px
             @include elevate()
             // box-shadow: 0 0 5rem $color-light
