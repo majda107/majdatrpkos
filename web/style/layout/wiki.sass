@@ -1,5 +1,6 @@
 @import '../components/section'
 @import '../components/entry'
+@import '../abstracts/variables'
 
 .wiki 
     margin-top: 120px
@@ -19,3 +20,8 @@
         width: 80%
         margin-left: auto
         margin-right: auto
+
+@media screen and ( max-width: $mobile-width)
+    .section:hover
+        margin-left: 0px !important
+    

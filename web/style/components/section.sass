@@ -29,3 +29,20 @@
         display: grid
         grid-auto-flow: row
         row-gap: 20px
+
+
+@media screen and ( max-width: $mobile-width)
+    .section
+        grid-template-rows: auto
+        grid-template-columns: 1fr
+
+        &-header
+            grid-column: 1/2
+
+        &-content
+            grid-column: 1/2
+
+        &-block
+            width: 100%
+            grid-row: 2/4
+            
