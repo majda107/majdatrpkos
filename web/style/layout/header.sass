@@ -132,6 +132,7 @@ header
                     border-radius: 0
                     width: 48px
                     padding: 12px
+                    user-select: none
                     pointer-events: none
 
             &-picture
@@ -139,11 +140,13 @@ header
                 height: min-content
                 grid-area: image
                 position: relative
+                user-select: none
 
                 &-image
                     width: 100%
                     border-radius: 14px
                     display: block
+                    user-select: none
 
                 &-box
                     position: absolute
@@ -167,6 +170,7 @@ header
             background-size: contain
             background-position: center center
             background-repeat: no-repeat
+            user-select: none
 
             padding-top: 100% // preserve aspect ratio?
 
